@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-//import { EmployeeService } from './employee.service';
+import { EmployeeService } from './employee.service';
 import { from } from 'rxjs';
 import { ajax } from 'rxjs/ajax';
 
@@ -18,7 +18,6 @@ export class HttpComponent implements OnInit {
     const apiData = ajax("/assets/data/employees.json");
 
     apiData.subscribe(data => {
-      debugger;
       console.log(data.response);
     });
   }

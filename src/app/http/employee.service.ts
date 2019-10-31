@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { IEmployee } from '../models/employee';
 import { from } from 'rxjs';
+import { ajax } from 'rxjs/ajax';
 
 
 @Injectable()
@@ -13,6 +14,6 @@ export class EmployeeService {
     }
 
     getEmployee() {
-        return from(fetch(this._url));
+        return ajax(this._url);
     }
 }
