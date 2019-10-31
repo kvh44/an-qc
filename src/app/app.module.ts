@@ -7,6 +7,7 @@ import { HttpComponent } from './http/http.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ZippyComponent } from './zippy/zippy.component';
 import { HomeComponent } from './home/home.component';
+import { AopcComponent } from './aopc/aopc.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { HomeComponent } from './home/home.component';
     AppComponent,
     HttpComponent,
     ZippyComponent,
-    HomeComponent
+    HomeComponent,
+    AopcComponent
   ],
   imports: [
     BrowserModule,
